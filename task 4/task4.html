@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tasks | Products</title>
+  <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I’m a passionate web developer eager to build modern and interactive web applications using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>To-Do List</h3>
+      <input type="text" id="todoInput" placeholder="Add a task">
+      <button onclick="addTodo()">Add</button>
+      <ul id="todoList"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Product Listing</h3>
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+        </select>
+        <select id="sort">
+          <option value="rating">Sort by Rating</option>
+          <option value="price">Sort by Price</option>
+        </select>
+        <button onclick="renderProducts()">Apply</button>
+      </div>
+      <ul id="productList"></ul>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: achithapulluri@gmail.com</p>
+  </section>
+
+  <script src="task4.js"></script>
+</body>
+</html>
+
+
